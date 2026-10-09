@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abel Alinaswe Masanduka | Personal Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <p class="site-title">Abel's Portfolio</p>
+    <button type="button" id="theme-toggle" aria-pressed="false">Dark mode</button>
+</header>
+
+<nav id="site-nav" aria-label="Main navigation">
+    <button type="button" id="menu-toggle" aria-expanded="false" aria-controls="nav-links">Menu ☰</button>
+    <ul id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#hobbies">My Hobbies</a></li>
+        <li><a href="#learning">My Learning Plan</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#photos">My Photos</a></li>
+        <li><a href="#media">My Media</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <!-- Introductory area -->
+    <section id="home" class="hero">
+        <h1>Abel Alinaswe Masanduka</h1>
+        <p class="programme">Computer Science, Mulungushi University</p>
+        <p>Welcome to my personal website. I am learning web technologies and building practical skills in HTML, CSS and JavaScript.</p>
+        <a href="#projects" class="btn">View My Projects</a>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p class="highlight">
+            My name is Abel Alinaswe Masanduka. I am a Computer Science student
+            interested in technology, programming and web development. I enjoy
+            learning how computers and software can be used to solve problems.
+            Through this course, I am developing my knowledge of HTML, CSS and
+            other web technologies. My goal is to improve my practical skills
+            and become a better software developer.
+        </p>
+        <p>
+            Useful Web Development Resource:
+            <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development"
+               target="_blank" rel="noopener">
+                Learn Web Development on MDN
+            </a>
+        </p>
+    </section>
+
+    <section id="hobbies">
+        <h2>My Hobbies</h2>
+        <ul>
+            <li>Programming</li>
+            <li>Playing Football</li>
+            <li>Reading the Bible</li>
+        </ul>
+    </section>
+
+    <section id="learning">
+        <h2>My Learning Plan</h2>
+        <div class="table-wrap">
+            <table>
+                <caption>My Weekly Web Development Learning Plan</caption>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Topic</th>
+                        <th>Practice Task</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>HTML</td>
+                        <td>Practise creating web pages</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>CSS</td>
+                        <td>Practise styling a web page</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>JavaScript</td>
+                        <td>Practise basic interactivity</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects and Skills</h2>
+        <div class="project-grid">
+            <article class="project-card">
+                <h3>HTML5 Page Structure</h3>
+                <p>I built this portfolio using semantic elements such as header, nav, main, section and footer. I also added a learning table, captioned photos, and audio and video with written summaries, so the page is clear and accessible.</p>
+            </article>
+            <article class="project-card">
+                <h3>Responsive CSS Design</h3>
+                <p>I styled the whole site with an external stylesheet, using a consistent colour palette, the box model, and a media query so the layout works on both phones and computers.</p>
+            </article>
+            <article class="project-card">
+                <h3>JavaScript Interactivity</h3>
+                <p>I added a validated contact form with a local preview, a photo gallery viewer, a dark and light theme switch, and a mobile menu. I learned to use functions, events and DOM updates.</p>
+            </article>
+            <article class="project-card">
+                <h3>Publishing with GitHub and Render</h3>
+                <p>I stored my website in a GitHub repository and deployed it as a static site on Render, so it is available online through a public link.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="photos">
+        <h2>My Photos</h2>
+        <figure class="gallery">
+            <img id="gallery-img" src="images/photo1.jpg" alt="Description of photo 1">
+            <figcaption id="gallery-caption">Caption for photo 1</figcaption>
+        </figure>
+        <div class="gallery-controls">
+            <button type="button" id="prev-btn">Previous</button>
+            <span id="gallery-count">1 of 3</span>
+            <button type="button" id="next-btn">Next</button>
+        </div>
+    </section>
+
+    <section id="media">
+        <h2>My Media</h2>
+
+        <h3>My Introduction Video</h3>
+        <video controls width="600">
+            <source src="videos/introduction.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+        <p>
+            This video introduces me, my programme of study, and a web development
+            skill I hope to learn.
+        </p>
+
+        <h3>My Hobby Audio</h3>
+        <audio controls>
+            <source src="videos/hobby-audio.mp4" type="audio/mp4">
+            Your browser does not support the audio element.
+        </audio>
+        <p>
+            This audio recording explains one of my hobbies and why I enjoy it.
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p><strong>Browser demonstration only — no message is sent.</strong></p>
+
+        <form id="contact-form" novalidate>
+            <div class="field">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <span class="error" id="name-error" aria-live="polite"></span>
+            </div>
+
+            <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error" id="email-error" aria-live="polite"></span>
+            </div>
+
+            <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <span class="error" id="message-error" aria-live="polite"></span>
+            </div>
+
+            <button type="submit">Validate and Preview</button>
+        </form>
+
+        <div id="form-preview" aria-live="polite"></div>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Abel Alinaswe Masanduka</p>
+    <p><a href="https://github.com/YOUR-USERNAME/YOUR-REPO">View Source on GitHub</a></p>
+</footer>
+
+</body>
+</html>
