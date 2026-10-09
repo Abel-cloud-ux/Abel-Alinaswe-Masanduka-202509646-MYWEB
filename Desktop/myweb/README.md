@@ -2,7 +2,7 @@
 
 A responsive student portfolio built with HTML5, CSS and JavaScript by Abel Alinaswe Masanduka, Mulungushi University.
 
-**Live site:** [paste your Render link here]
+**Live site:** [https://abel-alinaswe-masanduka-202509646-myweb.onrender.com]
 
 ## JavaScript features
 1. **Contact form validation and preview:** rejects empty or spaces-only names and messages and invalid emails, then shows a local preview (no message is sent).
